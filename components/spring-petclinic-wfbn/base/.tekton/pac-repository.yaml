@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: my-app-petclinic
+    appstudio.openshift.io/component: spring-petclinic-wfbn
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: spring-petclinic-wfbn
+  namespace: eyuen-tenant
+spec:
+  url: https://github.com/burrsitis/spring-petclinic
