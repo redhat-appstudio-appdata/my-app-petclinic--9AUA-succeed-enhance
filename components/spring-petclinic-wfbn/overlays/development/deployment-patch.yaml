@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: spring-petclinic-wfbn
+  namespace: eyuen-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d13f9683efc6660ff954df0c95a677070c45cf6d67ee672f94571b9a3206e3d2
+        name: my-java-springboot
+        resources: {}
+status: {}
