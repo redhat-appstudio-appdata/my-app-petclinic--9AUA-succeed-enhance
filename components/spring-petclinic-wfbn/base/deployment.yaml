@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: spring-petclinic-wfbn
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:-9AUA-spring-petclinic-wfbn
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d13f9683efc6660ff954df0c95a677070c45cf6d67ee672f94571b9a3206e3d2
         name: my-java-springboot
         ports:
         - containerPort: 8081
